@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.72.0">
+  <title>Album example · Bootstrap</title>
+
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+  <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+    body{
+        padding-top: 3rem;
+      padding-bottom: 3rem;
+      color: #382006;
+      
+      
+      background-color: rgb(218, 180, 233);
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: 200;
+
+        
+    }
+    .container-fluid{
+        background-image: url(cof2.webp);
+        font-style: italic;
+      font-weight: bolder;
+      font-family: Georgia, 'Times New Roman', Times, serif;}
+      #BITTERSWEET{
+        background-image: url(bg1.jpg);
+        color: rgb(46, 8, 64);
+      }
+      #SAVOURY{
+        background-image: url(bg1.jpg);
+        color:rgb(46, 8, 64) ;
+      }
+  </style>
+
+
+</head>
+
+<body>
+
+    <header>
+    
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Tha Lavender Coffee Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+              aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="product.html">Menu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Homepage</a></li>
+                    <li><a class="dropdown-item" href="product.html">Menu</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="contact.html">Place Order</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <br>
+          
+        </nav>
+      </header>
+
+  <main>
+    
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="font-weight-light">🪻Explore Our Divine Menu🪻</h1>
+          <p class="lead text-muted">Discover the culinary delights of our lavender-themed café, where an extensive menu awaits. Indulge in a diverse selection of aromatic coffee blends, from classic espresso to unique lavender-infused lattes. Our savory dishes range from hearty breakfast options to gourmet sandwiches and salads, each crafted with fresh, high-quality ingredients. There's something to satisfy every palate, making every visit a flavorful adventure.</p>
+          <p>
+            <a href="index.html" class="btn btn-light my-2">Home</a>
+            <a href="contact.html" class="btn btn-dark my-2">Place Order</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <h2 align="center" id="BITTERSWEET"><i>BITTERSWEETS,CLASSICS & REFRESHING DRINKS</i></h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav1.jpg" id="lav1" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="coldlavendercoffee.jpg" id="coldlavendercoffee" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav3.jpg" id="lav3" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav4.jpg" id="lav4" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav5.jpg" id="lav5" height="500" width="100%">
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav6.jpg" id="lav6" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav7.jpg" id="lav7" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lavendercoffee.webp" id="lavendercoffee" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="lav8.jpg" id="lav8" height="500" width="100%">
+
+              <div class="card-body">
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+  
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 align="center" id="SAVOURY"><i>SAVOURY SIDES</i></h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="classicavacadotoast.webp" id="classicavacadotoast" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text"><i>COMING SOON...</i></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">(Mrp)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav1.jpg" id="sav1" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav2.jpg" id="sav2" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav3.jpg" id="sav3" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav4.jpg" id="sav4" height="500" width="100%">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav5.jpg" id="sav5" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav6.jpg" id="sav6" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav7.jpg" id="sav7" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="sav8.jpg" id="sav8" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 align="center" id="BITTERSWEET"><i>HEAVENLY DESSERTS</i></h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des1.jpg" id="des1" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="lavendercake.jpg" id="lavendercake" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des2.jpg" id="des2" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des3.jpg" id="des3" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des4.jpg" id="des4" height="500" width="100%">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des5.jpg" id="des5" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des6.jpg" id="des6" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des7.jpg" id="des7" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="des8.jpg" id="des8" height="500" width="100%">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Add</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Like❤️</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+   <!-- FOOTER -->
+   <footer class="container py-5">
+    <div class="row">
+        <div class="col-12 col-md">
+            <h2>🪻</h2>
+            <img src="logo.jpg" id="logo" height="200px" width="200px">
+            <small class="d-block mb-3 text-muted">&copy; Since 2005</small>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-dark" href="#">thelavendercoffeecafe@gmail.com</a></li>
+                <li><a class="link-dark" href="#">Review</a></li>
+                <li><a class="link-dark" href="#">Customer Care</a></li>
+                <li><a class="link-dark" href="#">+91 9845368223</a></li>
+                <li><a class="link-dark" href="#">+91 9655638788</a></li>
+               
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Site Terms</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-dark" href="#">Terms of Use</a></li>
+                <li><a class="link-dark" href="#">Student Discounts</a></li>
+                <li><a class="link-dark" href="#">Privacy Policy</a></li>
+                <li><a class="link-dark" href="#">Gift Card Terms</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Our Company</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-dark" href="#">Careers</a></li>
+                <li><a class="link-dark" href="#">Franchising</a></li>
+                <li><a class="link-dark" href="#">Store Locator</a></li>
+                
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-dark" href="#">Team</a></li>
+                <li><a class="link-dark" href="#">Locations</a></li>
+                <li><a class="link-dark" href="#">Privacy</a></li>
+                <li><a class="link-dark" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
